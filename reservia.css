@@ -1,0 +1,66 @@
+
+#liens
+{
+display: flex; 
+justify-content: flex-end; 
+}
+
+#filtres
+{
+    display: flex; 
+}
+
+#HébergementsàMarseille
+{
+display: flex;
+width: 60%;
+flex-wrap: wrap;
+
+}
+
+#lespluspopulaires
+{
+    width: 40%;
+}
+
+#conteneur1
+{
+    display: flex;
+
+}
+
+#basdepage
+{
+display: flex; 
+}
+
+#aubergecannebiere,#hotelduport,#hotelmouette,#hotelmer,#aubergepanier,#chezamina
+{
+    width: 100px;  
+}
+
+figcaption
+{
+    font-size: 0,2em;
+}
+
+#ActivitesMarseille
+{
+    display: flex;
+    
+}
+
+#vieuxport,#pommegues,#frioul,#calanques,#longchamp,#notredame
+{
+    width: 100px;  
+}
+
+#hotelsoleil,#hoteldeleau,#hotelbleu
+{
+    width: 100px;
+}
+
+#basdepage
+{
+    justify-content: space-around;
+}
