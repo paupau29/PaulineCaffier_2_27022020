@@ -1,66 +1,319 @@
+/* Définition des polices */
 
-#liens
+body
 {
-display: flex; 
-justify-content: flex-end; 
-}
-
-#filtres
-{
-    display: flex; 
-}
-
-#HébergementsàMarseille
-{
-display: flex;
-width: 60%;
-flex-wrap: wrap;
-
-}
-
-#lespluspopulaires
-{
-    width: 40%;
-}
-
-#conteneur1
-{
-    display: flex;
-
-}
-
-#basdepage
-{
-display: flex; 
-}
-
-#aubergecannebiere,#hotelduport,#hotelmouette,#hotelmer,#aubergepanier,#chezamina
-{
-    width: 100px;  
+    width: 1024px;
+    margin: auto; 
+    font-family:Raleway,Arial, Helvetica, sans-serif
 }
 
 figcaption
 {
     font-size: 0,2em;
 }
+strong
+{
+    font-weight: bold;
+}
 
-#ActivitesMarseille
+h1
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+h4
+{
+    font-size: 0,2em;
+    font-weight: normal;
+}
+/* Mise en forme Header*/
+
+header
 {
     display: flex;
-    
+    flex direction: row;
 }
 
-#vieuxport,#pommegues,#frioul,#calanques,#longchamp,#notredame
+#link
 {
-    width: 100px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 45%;
 }
 
-#hotelsoleil,#hoteldeleau,#hotelbleu
+
+label
 {
-    width: 100px;
+    border: 1px blue;
+    background-color: blue;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 1%;
+}
+.surching-bar
+{
+    border: 1px#F2F2F2;
+    background-color:#F2F2F2; 
+    padding: 1%;
+    border-radius: 10px 0px 0px 10px;
 }
 
-#basdepage
+input
 {
-    justify-content: space-around;
+    border: none;
 }
+#filters
+{
+    display: flex ; 
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: baseline;
+}
+.one:hover
+{
+    color: gray;
+}
+.two:hover
+{
+    color: gray;
+}
+.three:hover
+{
+    color: gray;
+}
+.four:hover
+{
+    color: gray;
+}
+
+p strong
+{
+    color: grey;
+    font-weight: normal;
+}
+
+
+/* Mise en forme section hébergement à Marseille*/
+
+#conteneur1
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    margin-right: 4%;
+    align-items: baseline;
+    width: 62%;
+
+}
+
+#conteneur
+{
+    display: flex;
+    flex-direction: row;
+    align-items: ;
+}
+#accomodation-bloc
+{
+    display:flex;
+    flex: row;
+    flex-wrap: wrap;
+    padding: 4%;   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.picture
+{
+    margin:5px;
+    border-radius: 10px;
+    max-width: 100%;
+    max-width: 100%;
+}
+.picture-right
+{
+    width:100px;
+    margin:5px;
+    border-radius: 10px;
+}
+#conteneur aside
+{
+    border: 1px solid #F2F2F2;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+#most-popular
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    width:34%;
+}
+#most-popular aside
+{
+    display:flex;
+    flex-direction: row;
+    width:80%;
+
+}
+#accomodation-bloc aside
+{
+width: 20%;
+}
+
+.mostpopular figcaption
+{
+   text-align: column;
+   font-size: 0,5em;
+}
+
+
+/*Mise en forme section Activité à Marseille*/
+
+.vieuxport,.calanques
+{
+    max-width: 100%;
+	height: auto;
+    border-radius: 10px;
+
+}
+
+.frioul,.pommegues
+{
+    max-width: 100%;
+	height: auto;
+    border-radius: 10px;
+
+}
+.notredame,.longchamp
+{
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+ 
+}
+#marseille-activities
+{
+    display: flex;
+    flex-direction: row;
+}
+#activity-2,#activity56
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#marseille-activities figcaption
+{
+    font-weight: bold;
+}
+
+#marseille-activities aside
+{
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    margin:1%;
+    width: 25%;
+    height: 100%;
+}
+
+
+/* Mise en forme bas de page */
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+}
+ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-text
+{
+    margin:0%;
+}
+.footer-text strong
+{
+    font-weight: bold;
+}
+
+/* Régle responsive Iphone */
+
+@media (max-width:980px)
+
+{
+#link
+    {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap:wrap;
+    }
+    #filters
+    {
+        display: flex ; 
+        flex-direction: column;
+    }
+    #conteneur
+   {
+    display: flex;
+    flex: column;
+   }
+   #accomodation-bloc
+   {
+       display:flex;
+       flex: column;
+
+    }
+    #marseille-activities
+    {
+    display: flex;
+    flex-direction: column;
+
+    }
+    footer
+    {
+    display: flex;
+    flex-direction: column;
+
+    }
+    .vieuxport,.calanques
+{
+    width: auto;
+	height: auto;
+    border-radius: 10px;
+
+}
+
+.frioul,.pommegues
+{
+    width: auto;
+	height: auto;
+    border-radius: 10px;
+
+}
+.notredame,.longchamp
+{
+    width: auto;
+    height: auto; 
+    border-radius: 10px;
+
+ }
+
+}
+
