@@ -1,10 +1,12 @@
 /* Définition des polices */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body
 {
-    width: 1024px;
-    margin: auto; 
-    font-family:Raleway,Arial, Helvetica, sans-serif
+    width: 1330px;
+    height:1880px;
+    font-family:'Raleway',sans-serif;
+    margin: auto;
 }
 
 figcaption
@@ -71,19 +73,26 @@ input
     width: 70%;
     align-items: baseline;
 }
-.one:hover
+#one:hover
 {
     color: gray;
 }
-.two:hover
+#one,#two,#three,#four
+{
+    border:2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+#two:hover
 {
     color: gray;
 }
-.three:hover
+#three:hover
 {
     color: gray;
 }
-.four:hover
+#four:hover
 {
     color: gray;
 }
@@ -104,9 +113,10 @@ p strong
     border: 1px solid #F2F2F2;
     border-radius: 10px;
     background-color: #F2F2F2;
-    margin-right: 4%;
-    align-items: baseline;
-    width: 62%;
+    margin-right: 3%;
+    justify-content: baseline;
+    width: 67%;
+    padding:3%;
 
 }
 
@@ -114,15 +124,14 @@ p strong
 {
     display: flex;
     flex-direction: row;
-    align-items: ;
+    width:100%
 }
 #accomodation-bloc
 {
     display:flex;
     flex: row;
     flex-wrap: wrap;
-    padding: 4%;   
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     width: 100%;
 
@@ -131,19 +140,19 @@ p strong
 {
     margin:5px;
     border-radius: 10px;
-    max-width: 100%;
-    max-width: 100%;
+    width:238px;
+    height:118px;
 }
 .picture-right
 {
-    width:100px;
+    width:127px;
+    height: 137px;
     margin:5px;
     border-radius: 10px;
 }
 #conteneur aside
 {
     border: 1px solid #F2F2F2;
-    margin: 20px;
     border-radius: 10px;
     background-color: white;
 
@@ -157,18 +166,20 @@ p strong
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    width:34%;
+    width:30%;
 }
+
 #most-popular aside
 {
     display:flex;
     flex-direction: row;
     width:80%;
+    margin-top: 40px;
 
 }
 #accomodation-bloc aside
 {
-width: 20%;
+width: auto;
 }
 
 .mostpopular figcaption
@@ -180,39 +191,81 @@ width: 20%;
 
 /*Mise en forme section Activité à Marseille*/
 
-.vieuxport,.calanques
+.vieuxport
 {
-    max-width: 100%;
-	height: auto;
+    width: 302px;
+	height: 386px;
     border-radius: 10px;
+    margin-right: 33px;
+}
+.calanques
+{
+    width: 302px;
+	height: 389px;
+    border-radius: 10px;
+    margin-right: 33px;
+
+
+}
+.pommegues
+{
+    width: 305px;
+	height: 178px;
+    border-radius: 10px;
+    margin-right: 33px;
+
+
+}
+.frioul
+{
+    widows: 305px;
+	height: 111px;
+    border-radius: 10px;
+    margin-right: 33px;
 
 }
 
-.frioul,.pommegues
+.notredame
 {
-    max-width: 100%;
-	height: auto;
-    border-radius: 10px;
-
-}
-.notredame,.longchamp
-{
-    width: 100%;
-    height: auto; 
+    width: 305px;
+    height: 141px; 
     border-radius: 10px;
  
+}
+.longchamp
+{
+    width: 305px;
+	height: 152px;
+    border-radius: 10px;
 }
 #marseille-activities
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 #activity-2,#activity56
 {
     display: flex;
     flex-direction: column;
-}
+    width: auto;
 
+}
+#picture1
+{
+    width:305px;
+    height:242px;
+}
+#picture2
+{
+    width: 305px;
+    height: 168px;
+}
+#picture3,#picture4
+{
+    width: 305px;
+    height: 205px;
+}
 #marseille-activities figcaption
 {
     font-weight: bold;
@@ -222,9 +275,7 @@ width: 20%;
 {
     border: 1px solid #F2F2F2;
     border-radius: 10px;
-    margin:1%;
-    width: 25%;
-    height: 100%;
+    
 }
 
 
@@ -253,12 +304,10 @@ ul
     font-weight: bold;
 }
 
-/* Régle responsive Iphone */
+/* Régle responsive mobiles */
 
-@media (max-width:980px)
-
-{
-#link
+@media screen and (max-width:768px) {
+    #link
     {
         display: flex;
         flex-direction: row; 
