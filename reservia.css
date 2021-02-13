@@ -337,9 +337,6 @@ li {
     line-height: 2em;
     font-weight: bold;
 }
-.footer-text strong {
-    font-weight: bold;
-}
 /* Régle responsive mobiles */
 @media all and (max-width:768px) {
 /*taille des polices*/
@@ -349,7 +346,7 @@ body {
 }
 h2 {
     font-size: 5vw;
-    font-weight: bold;
+    font-weight: bold;  
     margin-left: 3.5%;
     margin-top:2%;
 }
