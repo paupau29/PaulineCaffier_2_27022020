@@ -654,7 +654,7 @@ li
 
     div.accomodation
     {
-        max-width: 100%;
+        max-width: 330px;
         margin-bottom: 4%;
     }
 
@@ -866,12 +866,13 @@ li
         margin:0.7% 7% 15% 7%;
         padding: 1%;
     }
-
-    #navigation 
+    .nav3 
     {
-        margin: 5% 0 5% 0;
-    }   
-
+        margin-top:12px;
+        position: relative;
+        right: 0px;
+        top:0px;
+    }
     .fa-info 
     {
         width: 18px;
@@ -880,6 +881,46 @@ li
         padding:0.5% 0.5% 0.5% 0.5%;
         text-align: center;
         vertical-align: middle;
+    }
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)
+{
+    .nav3
+    {
+        margin-top:3px;
+    }
+    .surching-bar 
+    {
+        padding: 3.3%;
+    }
+
+    .fa-map-marker-alt 
+    {
+        font-size:35px;
+    }
+    .fa-search
+    {
+        font-size:20px;
+    }
+    .icon
+    {
+        height:4.5rem;
+        width:4.5rem;
+        font-size:30px;
+    }      
+    .fa-info 
+    {
+        padding:1%;
+        font-size: 18px;
+    }
+    div.text
+    {
+        font-size:2.2vw;
+    }
+    .pict-right
+    {
+        width: 160px;
+        height:160px;
     }
 }
 
